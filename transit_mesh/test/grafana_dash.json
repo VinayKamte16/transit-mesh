@@ -1,0 +1,50 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Multi-Cloud Transit Mesh Overview",
+    "panels": [
+      {
+        "type": "stat",
+        "title": "AWS ↔ Azure Tunnel Status",
+        "targets": [
+          { "expr": "aws_vpn_tunnel_status{peer=\"azure\"}" }
+        ],
+        "gridPos": { "x": 0, "y": 0, "w": 8, "h": 4 }
+      },
+      {
+        "type": "stat",
+        "title": "AWS ↔ GCP Tunnel Status",
+        "targets": [
+          { "expr": "aws_vpn_tunnel_status{peer=\"gcp\"}" }
+        ],
+        "gridPos": { "x": 8, "y": 0, "w": 8, "h": 4 }
+      },
+      {
+        "type": "stat",
+        "title": "Azure ↔ GCP Tunnel Status",
+        "targets": [
+          { "expr": "azure_vpn_tunnel_status{peer=\"gcp\"}" }
+        ],
+        "gridPos": { "x": 16, "y": 0, "w": 8, "h": 4 }
+      },
+      {
+        "type": "graph",
+        "title": "Bandwidth (iperf3)",
+        "targets": [
+          { "expr": "iperf3_bandwidth_mbps" }
+        ],
+        "gridPos": { "x": 0, "y": 4, "w": 12, "h": 8 }
+      },
+      {
+        "type": "graph",
+        "title": "Latency (fping)",
+        "targets": [
+          { "expr": "fping_latency_ms" }
+        ],
+        "gridPos": { "x": 12, "y": 4, "w": 12, "h": 8 }
+      }
+    ],
+    "schemaVersion": 30,
+    "version": 1
+  }
+} 
