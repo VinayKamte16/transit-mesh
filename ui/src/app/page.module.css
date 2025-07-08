@@ -215,7 +215,7 @@ a.secondary {
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
-img {
+.image {
   max-width: 100%;
   border-radius: 8px;
   margin: 1rem 0;

@@ -44,11 +44,11 @@ export default function Home() {
         </div>
         <div className={styles.card}>
           <h2>Architecture</h2>
-          <Image src="/architecture.png" alt="Architecture Diagram" width={400} height={220} />
+          <Image src="/architecture.png" alt="Architecture Diagram" width={400} height={220} className={styles.image} />
         </div>
         <div className={styles.card}>
           <h2>Sample Dashboard</h2>
-          <Image src="/grafana_sample.png" alt="Sample Grafana Dashboard" width={400} height={220} />
+          <Image src="/grafana_sample.png" alt="Sample Grafana Dashboard" width={400} height={220} className={styles.image} />
         </div>
       </div>
       <div className={styles.card}>
