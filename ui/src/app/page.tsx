@@ -5,6 +5,20 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <div className={styles.container}>
+      <div style={{
+        background: '#fffbe6',
+        color: '#b8860b',
+        border: '1px solid #ffe58f',
+        borderRadius: 8,
+        padding: '0.75rem 1rem',
+        marginBottom: '1.5rem',
+        textAlign: 'center',
+        fontWeight: 600,
+        fontSize: '1.1rem',
+        letterSpacing: 0.5
+      }}>
+        🚧 This project is a <b>Work in Progress</b>. Features and UI are actively being improved!
+      </div>
       <nav className={styles.navbar}>
         <span style={{ fontWeight: 700, fontSize: '1.2rem' }}>Transit Mesh</span>
         <div>
